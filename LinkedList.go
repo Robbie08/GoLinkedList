@@ -128,6 +128,16 @@ func (list *linkedList) contains(val int) bool {
 }
 
 /*
+* This function will clear our list
+ */
+
+func (list *linkedList) clear() {
+	list.oHead = nil
+	list.oTail = nil
+	list.oSize = 0
+}
+
+/*
 * This function will print all the elements of the list
  */
 func (list *linkedList) printList() {

@@ -19,5 +19,7 @@ type List interface {
 
 	contains(int) bool // will return true if the value is in the list
 
+	clear()
+
 	printList() // prints the entire list
 }

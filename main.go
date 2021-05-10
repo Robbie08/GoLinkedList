@@ -30,4 +30,5 @@ func main() {
 	fmt.Println("contains(29): ", list.contains(29))
 	fmt.Println("contains(99): ", list.contains(99))
 	list.printList()
+	fmt.Println("\nisEmpty(): ", list.isEmpty())
 }
