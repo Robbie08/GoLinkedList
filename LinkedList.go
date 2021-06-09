@@ -96,6 +96,27 @@ func (list *linkedList) delete(val int) bool {
 	return isDeleted // will return if we deleted an item or not
 }
 
+func (list *linkedList) update(index, val int) bool {
+	if list.isEmpty() {
+		return false
+	}
+
+	count := 0
+	curr := list.oHead
+	isUpdated := false
+	for count < index && curr != nil {
+		curr = curr.next
+		count++
+	}
+
+	if count == index {
+		curr.data = val
+		isUpdated = true
+	}
+
+	return isUpdated
+}
+
 // returns the Head node's data
 func (list *linkedList) getHeadVal() int {
 	return list.oHead.data

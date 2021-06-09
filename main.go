@@ -19,9 +19,17 @@ func main() {
 	list.addLast(55)
 	list.add(2000)
 	list.add(1986)
+	list.addLast(215)
 	list.add(10)
-	list.remove()   // removes node at the front
+	list.addLast(99)
+	list.delete(99)
 	list.delete(10) // removes all the instances of the value 10
+	list.update(1, -8)
+
+	fmt.Println()
+	fmt.Println("////////////////////////////////")
+	fmt.Println("////   LinkedList - Tests   ////")
+	fmt.Println("////////////////////////////////")
 
 	// print out the list information
 	fmt.Println("Head: ", list.getHeadVal())
@@ -29,6 +37,8 @@ func main() {
 	fmt.Println("List Size: ", list.getSize())
 	fmt.Println("contains(29): ", list.contains(29))
 	fmt.Println("contains(99): ", list.contains(99))
+	fmt.Println("contains(12): ", list.contains(12))
 	list.printList()
 	fmt.Println("\nisEmpty(): ", list.isEmpty())
+	fmt.Println()
 }
